@@ -47,7 +47,7 @@ sudo smbd -D -s /etc/samba/smb.conf
 sleep 2
 echo "You can try, on another computer, in 'Networks' folder."
 echo "You should see a server named 'CH12'."
-echo "You can access it's contents through user '"$USER"' and its password."
+echo "You can access its contents through account '"$USER"' and its password."
 echo ""
 echo "IMPORTANT!!!: To stop the Samba server service, run '"$0" stop'"
 echo "Don't forget to try. BYE."
