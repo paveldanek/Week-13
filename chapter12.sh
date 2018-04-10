@@ -34,6 +34,9 @@ echo " " >> smb.conf
 echo "[homes]" >> smb.conf
 echo "browsable = yes" >> smb.conf
 sudo chown root:root smb.conf
+if [ -e /etc/samba/smb.conf ]; then
+    sudo mv /etc/samba/smb.conf /etc/samba/smb.conf.bkup
+fi
 sudo mv smb.conf /etc/samba/
 sleep 2
 echo "Now, we'll create a user account '"$USER"' and its password."
